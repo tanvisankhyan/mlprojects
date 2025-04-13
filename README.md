@@ -1,6 +1,7 @@
 ## Project Structure
 
 Student_Performance_Predictor/
+
         │
         ├── .github/
         │   └── workflows/
