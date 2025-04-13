@@ -80,12 +80,13 @@ Student_Performance_Predictor
  - XGBoost Regressor (XGBRegressor)
  - CatBoost Regressor (CatBoostRegressor with verbose=False)
  - AdaBoost Regressor (AdaBoostRegressor)
- - GitHub — where the code lives ✅
+
 
 ## Deployment
 
 This project is deployed using GitHub Actions to Azure App Service. The deployment process is automated through a GitHub Actions workflow.
-
+ - GitHub — where the code lives ✅
+   
 # Steps:
 
 1. **Set up Azure App Service**:
