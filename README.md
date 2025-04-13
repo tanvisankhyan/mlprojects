@@ -45,17 +45,29 @@ Student_Performance_Predictor/
         └── README.md
 
 
-## ML project
 
 
-AWS Deployment
-Step 1: create Elastic beanstalk instance. create environment
-step2: Create code pipeline to inegrate github repositoryand continue the deployment in the elastic beanstalk.
+## Deployment
+
+This project is deployed using GitHub Actions to Azure App Service. The deployment process is automated through a GitHub Actions workflow.
+
 
 GitHub — where the code lives ✅
 
-CodePipeline — listens to GitHub and starts the deployment
 
-Elastic Beanstalk — deploys and runs the app
+# Steps:
 
-IAM roles — let AWS services securely talk to each other
+1. **Set up Azure App Service**:
+   - Create an App Service on Azure if you already have one.
+
+
+2. **GitHub Actions Workflow**:
+   The app is deployed automatically using the GitHub Actions workflow in `.github/workflows/main_studentperformancepredictor.yml` upon pushing to the `main` branch. The workflow does the following:
+   - Installs dependencies.
+   - Deploys to Azure App Service.
+
+4. **Push Changes**:
+   Push changes to the `main` branch. GitHub Actions will handle the deployment process automatically.
+
+Once deployed, your app will be available at the URL provided by Azure App Service.
+
