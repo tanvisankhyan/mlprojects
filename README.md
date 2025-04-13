@@ -1,6 +1,47 @@
-## Project Architecture
+## Project Structure
 
-Student_Performance_Predictor/ │ ├── .github/ │ └── workflows/ │ └── main_studentperformancepredictor.yml # GitHub Actions workflow for deployment │ ├── artifacts/ # Trained model, preprocessor, and datasets │ ├── model.pkl │ ├── preprocessor.pkl │ ├── train.csv │ ├── test.csv │ ├── data/ │ └── students.csv # Raw input data │ ├── notebook/ │ ├── 1. EDA STUDENT PERFORMANCE.ipynb # Exploratory data analysis │ ├── 2. MODEL TRAINING.ipynb # Model development and training │ ├── src/ │ ├── components/ │ │ ├── data_ingestion.py │ │ ├── data_transformation.py │ │ └── model_trainer.py │ │ │ ├── pipeline/ │ │ ├── train_pipeline.py │ │ └── predict_pipeline.py │ │ │ ├── utils.py │ ├── logger.py │ └── exception.py │ ├── templates/ │ ├── home.html │ └── index.html # HTML templates for the UI │ ├── application.py # Flask application entry point ├── requirements.txt # Python dependencies ├── setup.py # Project packaging setup ├── .gitignore └── README.md
+Student_Performance_Predictor/
+│
+├── .github/
+│   └── workflows/
+│       └── main_studentperformancepredictor.yml
+│
+├── artifacts/
+│   ├── model.pkl
+│   ├── preprocessor.pkl
+│   ├── train.csv
+│   ├── test.csv
+│
+├── data/
+│   └── students.csv
+│
+├── notebook/
+│   ├── 1. EDA STUDENT PERFORMANCE.ipynb
+│   ├── 2. MODEL TRAINING.ipynb
+│
+├── src/
+│   ├── components/
+│   │   ├── data_ingestion.py
+│   │   ├── data_transformation.py
+│   │   └── model_trainer.py
+│   │
+│   ├── pipeline/
+│   │   ├── train_pipeline.py
+│   │   └── predict_pipeline.py
+│   │
+│   ├── utils.py
+│   ├── logger.py
+│   └── exception.py
+│
+├── templates/
+│   ├── home.html
+│   └── index.html
+│
+├── application.py
+├── requirements.txt
+├── setup.py
+├── .gitignore
+└── README.md
 
 
 ## ML project
